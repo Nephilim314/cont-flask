@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/main.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type=text/javascript>
+			$(function() {
+			  $('a#process_input').bind('click', function() {
+				$.getJSON('/background_process', {
+				  story: $('textarea[name="story"]').val(),
+				}, function(data) {
+				  $('#result').text(data.result);
+				});
+				return false;
+			  });
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class='container'>
+			<h1><center>Controversy Detection</center></h1>
+			<text id="intro_text">This is an extended part of my GSoC <a href="https://github.com/RedHenLab/ControversyDetection">project</a>, that I worked on during summer of 2017. </text>
+			<br>
+			<br>
+			<form>
+                <textarea id="text_input" rows="20" cols="80" name=story></textarea>
+                <br>
+				<a href=# id=process_input><button class='btn btn-default'>Submit</button></a>
+			</form>
+			<br>
+			<p><h2 align='center'>Verdict:</h2><h2 id=result align='center'></h2></p>
+
+		</div>
+	</body>
+</html>

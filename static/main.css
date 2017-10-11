@@ -1,0 +1,51 @@
+h1{
+    font-size: 3em;
+    font-family: serif;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 40px;
+    text-shadow: 1px 1px red;
+}
+
+#intro_text{
+	font-size: 1.1em;
+	font-family: serif;
+	margin: 20px;
+
+}
+
+
+textarea {
+    width: 50%;
+    display: block;
+    height: 300px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin: auto;
+    resize: none;
+    font-size: 0.8em;
+    font-family: "Times New Roman";
+}
+
+button {
+    background-color: #F5F5F5;
+    border: none;
+    color: grey;
+    padding: 16px 16px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+button:hover{
+  background: white;
+  color: black;
+}
